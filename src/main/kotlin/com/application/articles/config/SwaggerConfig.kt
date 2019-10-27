@@ -56,8 +56,8 @@ class SwaggerConfig {
 
     private fun apiInfo(version: String): ApiInfo {
         return ApiInfoBuilder()
-                .title("API - Person Service")
-                .description("Persons Management")
+                .title("API - Articles Service")
+                .description("Article Management")
                 .version(version)
                 .build()
     }

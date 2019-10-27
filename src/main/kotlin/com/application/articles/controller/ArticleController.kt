@@ -11,10 +11,10 @@ import javax.validation.Valid
 @RequestMapping("/api/article")
 class ArticleController(private val articleRepository: ArticleRepository) {
 
-    @GetMapping("/")
+    @GetMapping
     fun getArticles(): List<Article> = articleRepository.findAll()
 
-    @PostMapping("/")
+    @PostMapping
     fun createNewArticle(@Valid @RequestBody article: Article): Article = articleRepository.save(article)
 
     @GetMapping("/{id}")
